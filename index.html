@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>貯金額</title>
+	<style>
+body {
+	background-image: url(okane.jpg);
+	}
+</style>
+</head>
+<body class="red darken-3 white-text">
+ <script>
+	 var a = 0;
+     var box;
+     var tm;
+
+     window.onload = function() {
+          // iruka というエレメントを取得
+          box = document.getElementById("timer1");
+          //タイマースタートと同時にタイマーを取得
+          tm = setInterval("kujira1()",1000);
+     };
+
+     function kujira1() {
+          //カウントアップ
+          a += 1;
+          // a の値を box オブジェクトに表示
+          box.innerHTML = a;
+         
+     } 
+ </script>
+ <script>
+	 var a = 0;
+     var box;
+     var tm;
+
+     window.onload = function() {
+          // iruka というエレメントを取得
+          box = document.getElementById("timer");
+          //タイマースタートと同時にタイマーを取得
+          tm = setInterval("kujira()",0.000001);
+     };
+
+     function kujira() {
+           // SEとバイブレーションの制御
+        var warning = new Audio('warning3.mp3');
+        warning.play();
+           
+          //カウントアップ
+          a += 744567895678;
+          // a の値を box オブジェクトに表示
+          box.innerHTML = a;
+          
+     } 
+ </script>
+ <h1 style="text-align: center;">あなたの総資産</h1>
+ <h1 style="text-align: center;"><font color="#00bfff" size="7"><span id="timer" class="box">0</span></font></h1>
+ <h1 style="text-align: center;"><font size="7">円</font></h1>
+<h1 style="text-align: center;">主な収入先</h1>
+<h2 style="text-align: center;" style="color: red;">JPN:214525432</h2>
+<h2 style="text-align: center;" style="color: red;">JPN:265434232</h2>
+</body>
+</html>
